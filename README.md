@@ -25,7 +25,7 @@ Copyright © 2019 - 2022 HMBSbige. Forked from ShadowsocksR by BreakWa11
 [latest release]: https://github.com/HMBSbige/ShadowsocksR-Windows/releases
 
 ## FAQ
-Q1 ARSoft.Tools.Net.Dns包相关
+**Q1** ARSoft.Tools.Net.Dns包相关
 ```
 # 报错
 CS0246  未能找到类型或命名空间名“DnsOverTlsClient”(是否缺少 using 指令或程序集引用?)    shadowsocksr    E:\Github_repository\ShadowsocksR-Windows\shadowsocks-csharp\Model\DnsClient.cs 234 
@@ -40,5 +40,5 @@ CS0246  未能找到类型或命名空间名“DnsOverTlsClient”(是否缺少 
 2.拷贝到软件包本地源：
 	cp arsoft.tools.net.dns.2.3.1.nupkg 'C:\Program Files (x86)\Microsoft SDKs\NuGetPackages'
 3.安装
-	vs2022 -> nuget包管理器 -> 选择本地源 -> 安装arsoft.tools.net.dns
+	vs2022 -> nuget包管理器 -> 选择本地源 -> 安装arsoft.tools.net.dns
 ```
