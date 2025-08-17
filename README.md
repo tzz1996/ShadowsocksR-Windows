@@ -61,3 +61,16 @@ CS0246  未能找到类型或命名空间名“DnsOverTlsClient”(是否缺少 
 	vim shadowsocksr.csproj:
 		<TargetFramework>net9.0-windows</TargetFramework>
 ```
+
+**Q3** exe打包问题
+```
+# 报错
+vs2022中nuget找不到ILMerge包
+
+# 解决
+1.工具 -> NuGet包管理器 -> 程序包管理器控制台：
+	NuGet\Install-Package ilmerge -Version 3.0.41
+2.使用命令行打包：
+	cd C:\Users\tzz\.nuget\packages\ilmerge\3.0.41\tools\net452
+	.\ILMerge.exe /out:MergedApp.exe MyApp.exe LibraryA.dll LibraryB.dll
+```

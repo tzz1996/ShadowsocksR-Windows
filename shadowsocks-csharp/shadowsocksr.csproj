@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -32,6 +32,7 @@
   <PropertyGroup>
     <DefineConstants Condition=" $(SelfContained) ">$(DefineConstants);SelfContained</DefineConstants>
     <DefineConstants Condition=" $(RuntimeIdentifier.Contains('x64')) ">$(DefineConstants);Is64Bit</DefineConstants>
+    <PackAsTool>False</PackAsTool>
   </PropertyGroup>
 
   <ItemGroup>
@@ -52,6 +53,7 @@
     <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.1.0" />
     <PackageReference Include="HMBSbige.SingleInstance" Version="6.0.1" />
     <PackageReference Include="HMBSbige.UpdateChecker" Version="8.0.1" />
+    <PackageReference Include="ilmerge" Version="3.0.41" />
     <PackageReference Include="RouteMatcher" Version="1.0.0" />
     <PackageReference Include="RunAtStartup" Version="5.0.2" />
     <PackageReference Include="Shadowsocks.Protocol" Version="1.0.2" />
